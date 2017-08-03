@@ -17,3 +17,7 @@ script:
   - go test -coverprofile=media-type.coverprofile
   - gover
   - goveralls -coverprofile=gover.coverprofile -service=travis-ci
+
+notifications:
+  email:
+    on_success: never
