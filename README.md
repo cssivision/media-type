@@ -4,7 +4,7 @@
 [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://github.com/cssivision/media-type/blob/master/LICENSE)
 
 RFC 6838 media type parser.
-parse a media type into type, subtype, and suffix, or format a normal media types string use those parts.
+parse media type into type, subtype, and suffix, or format normal media types string use those parts.
 
 # Installation
 
