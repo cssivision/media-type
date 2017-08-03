@@ -8,10 +8,12 @@ matrix:
 
 before_install:
   - go get -t -v ./...
+  - go get github.com/modocache/gover
   - go get github.com/mattn/goveralls
 
 script:
   - go vet $(go list ./... | grep -v /vendor/)
   - go test -v -race ./...
   - go test -coverprofile=media-type.coverprofile
-  - goveralls -coverprofile=media-type.coverprofile -service=travis-ci
+  - gover
+  - goveralls -coverprofile=gover.coverprofile -service=travis-ci
