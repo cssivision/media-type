@@ -13,5 +13,5 @@ before_install:
 script:
   - go vet $(go list ./... | grep -v /vendor/)
   - go test -v -race ./...
-  - go test -coverprofile=media_type.coverprofile
-  - goveralls -coverprofile=media_type.coverprofile -service=travis-ci
+  - go test -coverprofile=media-type.coverprofile
+  - goveralls -coverprofile=media-type.coverprofile -service=travis-ci
